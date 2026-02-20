@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Lucky Slots v2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Lucky Slots — Try Your Luck!</h1>
+    <hr>
+  </header>
+
+  <main>
+    <section id="playArea">
+      <h2>Type how much you'd like to risk, then press SPIN</h2>
+
+      <div class="controls">
+        <label for="betAmount">Bet Amount:</label>
+        <input id="betAmount" type="number" value="5" min="1" />
+        <button id="spinBtn" class="btn">SPIN</button>
+      </div>
+
+      <div id="slotMachine">
+        <div id="slot1" class="slot">?</div>
+        <div id="slot2" class="slot">?</div>
+        <div id="slot3" class="slot">?</div>
+      </div>
+
+      <p id="results" class="results">Ready — balance shown below.</p>
+
+      <h3>Your Balance: $<span id="balanceAmount">150</span></h3>
+
+      <div class="controls">
+        <label for="deposit2Balance">Deposit:</label>
+        <input id="deposit2Balance" type="number" value="20" min="0" />
+        <button id="addMoneyBtn" class="btn">Add Funds</button>
+      </div>
+
+      <div id="imageResult" class="imageResult"></div>
+    </section>
+  </main>
+
+  <footer class="csumb">
+    <img id="csumbImg" src="img/csumb.png" alt="logo" />
+    <div>Javier Galarza's HW2 — Modified</div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
